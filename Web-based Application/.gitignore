@@ -1,0 +1,9 @@
+# Data Description Files
+Data_Description.pdf
+Data Description.docx
+
+# Common files to ignore
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

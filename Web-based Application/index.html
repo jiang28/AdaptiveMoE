@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Weather Data Visualization</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="control-panel">
+            <h3>📊 Data Controls</h3>
+            
+            <div class="control-group">
+                <label for="dataCategory">Data Category:</label>
+                <select id="dataCategory">
+                    <option value="">Select a category...</option>
+                    <option value="Temperature">🌡️ Temperature</option>
+                    <option value="Hydrology">💧 Hydrology</option>
+                    <option value="Radiation">☀️ Radiation</option>
+                    <option value="Moisture">🌫️ Moisture</option>
+                    <option value="Cloud">☁️ Cloud</option>
+                    <option value="Mass">🌍 Mass</option>
+                    <option value="Momentum">💨 Momentum</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="dataFile">Data Type:</label>
+                <select id="dataFile" disabled>
+                    <option value="">Select data type...</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="timeSlider">Time Selection:</label>
+                <input type="range" id="timeSlider" min="0" max="100" value="0" disabled>
+                <div id="timeLabel">Select data first</div>
+            </div>
+            
+            <div class="control-group">
+                <button id="loadData" disabled>Load Data Visualization</button>
+            </div>
+            
+            <div class="control-group">
+                <button id="clearData">Clear Visualization</button>
+            </div>
+        </div>
+        
+        <div class="legend" id="legend" style="display: none;">
+            <h4 id="legendTitle">Data Range</h4>
+            <div class="color-bar"></div>
+            <div class="legend-labels">
+                <span id="minValue">Min</span>
+                <span id="maxValue">Max</span>
+            </div>
+            <div id="unitLabel" style="text-align: center; margin-top: 5px; font-size: 11px; color: #2c3e50;"></div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+    
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <div>Loading weather data...</div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
