@@ -58,8 +58,4 @@ For full details, visit the [`Data/`](./Data) folder or refer to our [dataset RE
 - Flask (for web interface)
 - Leaflet.js (frontend map)
 
-### 📦 Installation
-```bash
-git clone https://github.com/jiang28/AdaptiveMoE.git
-cd seeing-storms-ahead
-pip install -r requirements.txt
+
