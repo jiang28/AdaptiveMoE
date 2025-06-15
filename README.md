@@ -1,4 +1,4 @@
-# 🌧️ Seeing Storms Ahead: Knowledge-Guided Adaptive Mixture of Experts for Precipitation Prediction [Applications]
+# 🌧️ Seeing Storms Ahead: Knowledge-Guided Adaptive Mixture of Experts for Precipitation Prediction 
 
 > **Status**: Under Review  
 > **Conference Track**: Applications Track  
